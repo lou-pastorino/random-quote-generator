@@ -9,6 +9,8 @@
 body {
   background: linear-gradient(to right, coral, lightcoral);
   display: flex;
+  flex-direction: column;
+  gap: 1rem;
   justify-content: center;
   align-items: center;
   height: 100vh;
@@ -96,4 +98,36 @@ body {
   /* color: white; */
   transform: scale(1.1);
   border: none;
+}
+
+.category-box {
+  width: 700px;
+  height: 100px;
+  background-color: white;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.cat-btns {
+  margin: 0.5rem 0;
+}
+
+.cat-btns button {
+  width: 150px;
+  min-height: 2.5rem;
+  margin: 0 1rem;
+  padding: 0.25rem 0;
+  outline: none;
+  background-color: lightblue;
+  border: none;
+  border-radius: 1rem;
+  transition: all 0.25s ease;
+  cursor: pointer;
+  transition: all ease 0.5s;
+}
+.cat-btns button:hover {
+  transform: scale(1.1);
 }

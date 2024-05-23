@@ -1,11 +1,13 @@
 const apiUrl = "https://api.quotable.io/random/";
 const wiseApiUrl = "https://api.quotable.io/random?tags=wisdom";
 const famousApiUrl = "https://api.quotable.io/random?tags=famous-quotes";
+const techApiUrl = "https://api.quotable.io/random?tags=technology";
 
 const generatorButton = document.getElementById("generate");
 const tweetButton = document.getElementById("tweet-btn");
 const wiseQuoteBtn = document.getElementById("wisdom");
 const famousQuoteBtn = document.getElementById("famous");
+const techQuoteBtn = document.getElementById("tech");
 const quote = document.getElementById("quote");
 const author = document.getElementById("author");
 
@@ -40,4 +42,7 @@ wiseQuoteBtn.addEventListener("click", () => {
 });
 famousQuoteBtn.addEventListener("click", () => {
   getQuote(famousApiUrl);
+});
+techQuoteBtn.addEventListener("click", () => {
+  getQuote(techApiUrl);
 });

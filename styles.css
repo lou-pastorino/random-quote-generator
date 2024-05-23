@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Italiana&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(to right, coral, lightcoral);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: "Italiana", sans-serif;
+}
+
+.quote-box {
+  height: 300px;
+  width: 700px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  border-radius: 1rem;
+  margin: 0 1rem;
+}
+
+.quote-box h2 {
+  font-size: 2rem;
+  margin-bottom: 0.2rem;
+}
+.line {
+  height: 1px;
+  width: 100px;
+  background-color: lightblue;
+  margin-bottom: 1.5rem;
+}
+
+.quote-box blockquote {
+  font-size: 1rem;
+  margin: 0 1rem;
+  min-height: 110px;
+}
+
+.quote-box blockquote::before,
+.quote-box blockquote::after {
+  content: '"';
+}
+
+.author {
+  width: 100%;
+  text-align: right;
+  margin-right: 10rem;
+  position: relative;
+}
+
+.author::before {
+  content: "";
+  width: 20px;
+  height: 2px;
+  background: lightblue;
+  position: absolute;
+  top: 50%;
+  right: 75px;
+}
+
+.btns {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.btns button {
+  width: 150px;
+  min-height: 2.5rem;
+  margin: 0 1rem;
+  padding: 0.25rem 0;
+  outline: none;
+  background-color: lightblue;
+  border: none;
+  border-radius: 1rem;
+  transition: all 0.25s ease;
+  cursor: pointer;
+}
+
+.btns button:nth-child(2) {
+  background-color: white;
+  border: lightblue solid 1px;
+}
+
+.btns button:hover {
+  background-color: lightcoral;
+  /* color: white; */
+  transform: scale(1.1);
+  border: none;
+}
